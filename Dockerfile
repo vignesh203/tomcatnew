@@ -1,2 +1,2 @@
 From tomcat:8-jre8
-ADD WebApp.war /usr/local/tomcat/webapps/
+COPY /var/lib/jenkins/workspace/Tomcat/target/WebApp.war /usr/local/tomcat/webapps/
