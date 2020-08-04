@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tomcat
+spec:
+  selector:
+    matchLabels:
+      run: tomcat
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: tomcat
+    spec:
+      containers:
+      - name: tomcat
+        image: vignesh203/docker-test
+        ports:
+        - containerPort: 80
