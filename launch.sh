@@ -1,2 +1,2 @@
-kubectl apply -f dep.yml
-kubectl aapply -f service.yml
+kubectl create -f dep.yml
+kubectl create -f service.yml
